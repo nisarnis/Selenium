@@ -49,7 +49,8 @@ public class FacebookCreatingAcc {
 		//To maximize
 				driver.manage().window().minimize();
 		
-		
+		//To Close
+				driver.close();
 	}
 
 }
