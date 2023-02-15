@@ -12,6 +12,7 @@ public class Navigation {
 	driver.manage().window().maximize();
       driver.navigate().refresh();
       driver.navigate().forward();
+      driver.close();
 	}
 
 }
