@@ -15,26 +15,17 @@ public class Aler {
 		WebDriver driver = new ChromeDriver();
 		driver.navigate().to("https://mail.rediff.com/cgi-bin/login.cgi");
 		driver.manage().window().maximize();
-		
+
 		WebElement btnclk = driver.findElement(By.xpath("//input[@title='Sign in']"));
 		btnclk.click();
 		Alert al = driver.switchTo().alert();
 		String text = al.getText();
 		System.out.println(text);
-		al.dismiss();
-		//al.accept();
-	
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		// al.dismiss();
+		al.accept();
+
+		// al.sendKeys("yes");
+
 	}
 
 }
